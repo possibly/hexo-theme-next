@@ -95,6 +95,11 @@
         isSidebarVisible = !isSidebarVisible;
       });
 
+      $('.sidebar-toggle2').on('click', function () {
+        isSidebarVisible ? sidebarHideMotion() : sidebarShowMotion();
+        isSidebarVisible = !isSidebarVisible;
+      });
+
       sidebarToggle.hover(function () {
         if (isSidebarVisible) {return}
         sidebarToggleLine1st.velocity('stop').velocity(sidebarToggleLine1stStatusArrow);

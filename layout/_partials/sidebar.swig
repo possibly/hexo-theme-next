@@ -41,6 +41,10 @@
             <span class="site-state-item-name">{{ __('state.pages') }}</span>
         </div>
       </div>
+      <div class="site-author-contact motion-element">
+        <p class="site-author-contact">Get in touch</p>
+        <p class="site-author-contact-mail"><i class="fa fa-envelope-o"></i> tylerbrothers1@gmail.com</p>
+      </div>
 
       {% if theme.rss %}
         <div class="feed-link motion-element">
