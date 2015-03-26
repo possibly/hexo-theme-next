@@ -4,6 +4,8 @@ menu:
   contact: /#
   #about: /about
 
+language: english
+
 # Place your favicon.ico to /source directory.
 favicon: /favicon.ico
 
