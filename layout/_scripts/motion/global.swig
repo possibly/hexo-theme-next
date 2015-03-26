@@ -95,9 +95,36 @@
         isSidebarVisible = !isSidebarVisible;
       });
 
+      // For 'Contact' navbar button.
       $('.sidebar-toggle2').on('click', function () {
-        isSidebarVisible ? sidebarHideMotion() : sidebarShowMotion();
-        isSidebarVisible = !isSidebarVisible;
+
+        // Check if we are in a post.
+        if ( $('#sidebar-nav ispost') ){
+          // Make the SideBar visible if its not already.
+          // Make the Overview section visible if its not already.
+          if ( !isSidebarVisible && !$("[data-target='site-overview']").hasClass('sidebar-nav-overview sidebar-nav-active') ){ 
+            sidebarShowMotion(); 
+            $('.sidebar-nav li').trigger('click');
+            isSidebarVisible = !isSidebarVisible;
+          }
+          // SideBar is already visible.
+          // Make the Overview section visible if its not already.
+          else if(isSidebarVisible && !$("[data-target='site-overview']").hasClass('sidebar-nav-overview sidebar-nav-active')){
+            $('.sidebar-nav li').trigger('click');
+          }
+          // SideBar is already visible
+          // Overview section is already visible
+          // Act like a normal toggle.
+          else {
+            isSidebarVisible ? sidebarHideMotion() : sidebarShowMotion();
+            isSidebarVisible = !isSidebarVisible;
+          }
+
+        // Not in a post, behave like normal.
+        }else{
+          isSidebarVisible ? sidebarHideMotion() : sidebarShowMotion();
+          isSidebarVisible = !isSidebarVisible;
+        }
       });
 
       sidebarToggle.hover(function () {

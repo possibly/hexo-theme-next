@@ -11,7 +11,7 @@
   <div class="sidebar-inner">
 
     {% if is_post() %}
-      <ul class="sidebar-nav motion-element">
+      <ul class="sidebar-nav motion-element" id='sidebar-nav ispost'>
         <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
           {{ __('sidebar.toc') }}
         </li>

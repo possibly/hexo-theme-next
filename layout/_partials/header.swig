@@ -13,7 +13,7 @@
       {% set itemName = name.toLowerCase() %}
           {% if itemName == 'contact' %}
             <li class="menu-item menu-item-{{ itemName }} sidebar-toggle2">
-              <a href="{{ url_for(path) }}">
+              <a href="#">
                 <i class="menu-item-icon icon-about"></i> <br />
           {% else %}
             <li class="menu-item menu-item-{{ itemName }}">
