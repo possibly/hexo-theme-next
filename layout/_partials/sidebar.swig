@@ -44,6 +44,7 @@
       <div class="site-author-contact motion-element">
         <p class="site-author-contact">Get in touch</p>
         <p class="site-author-contact-mail"><i class="icon-pen"></i> tylerbrothers1@gmail.com</p>
+        <a href="https://github.com/possibly" target="_blank" class="site-author-contact-github"><i class="icon-star"></i> https://github.com/possibly</a>
       </div>
 
       {% if theme.rss %}
